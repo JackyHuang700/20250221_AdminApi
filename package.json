@@ -16,6 +16,7 @@
     "node": ">=16.0.0"
   },
   "dependencies": {
+    "@swc/core-linux-x64-gnu": "^1.10.18",
     "@types/express-session": "^1.18.1",
     "@types/jsonwebtoken": "^9.0.8",
     "bcrypt": "^5.1.1",
@@ -37,8 +38,8 @@
     "module-alias": "^2.2.3",
     "mongodb": "^6.13.0",
     "morgan": "^1.10.0",
-    "tsconfig-paths": "^4.2.0",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.7.3"
   },
   "devDependencies": {
