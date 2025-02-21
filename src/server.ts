@@ -30,7 +30,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(session({
     name: SESSION_NAME ,
-    secret: process.env.SESSION_SECRET,
+    secret: process.env.SESSION_SECRET || 'defaultSecret',
     resave: false, // 避免每次請求都重新存儲 session
     saveUninitialized: true,
     cookie: {

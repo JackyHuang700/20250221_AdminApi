@@ -132,6 +132,15 @@ async function _delete(id: IUser['id']): Promise<Response> {
     message: 'User deleted',
   }
 
+  if(!id){
+    _resp = {
+      httpStatus: HttpStatusCodes.BAD_REQUEST,
+      status: false,
+      message: 'Id is required',
+    }
+    return Promise.resolve(_resp);
+  }
+
   // check if user already exists
   const exists = await MongoUserRepo.persists(id);
   if (!exists) {

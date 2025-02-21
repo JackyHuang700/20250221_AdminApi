@@ -82,7 +82,7 @@ async function addOne(user: IUser): Promise<Response> {
  * Update one user.
  */
 async function updateOne(user: IUser): Promise<void> {
-  const persists = await UserRepo.persists(user.id);
+  const persists = user.id && await UserRepo.persists(user.id);
   if (!persists) {
     throw new RouteError(
       HttpStatusCodes.NOT_FOUND,

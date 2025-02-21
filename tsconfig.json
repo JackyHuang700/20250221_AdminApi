@@ -26,7 +26,8 @@
     "config.ts",
     "scripts",
     "eslint.config.ts",
-    "config/env.d.ts"
+    "config/env.d.ts",
+    "src/types/express-session.d.ts"
   ],
   "exclude": [
     "src/public/*"

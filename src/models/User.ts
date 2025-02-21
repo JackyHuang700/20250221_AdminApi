@@ -1,4 +1,4 @@
-import { isString, isOptionalDate, isOptionalString } from 'jet-validators';
+import { isString, isOptionalDate, isOptionalString, isOptionalNumber } from 'jet-validators';
 
 import schema from '@src/util/schema';
 
@@ -8,7 +8,7 @@ import schema from '@src/util/schema';
 ******************************************************************************/
 
 export interface IUser {
-  id: number | string;
+  id: number | undefined;
   name: string;
   email: string;
   password: string;
@@ -22,13 +22,14 @@ export interface IUser {
 ******************************************************************************/
 
 const User = schema<IUser>({
-  id: isOptionalString,
+  // id: isOptionalString,
+  id: isOptionalNumber,
   name: isString,
   email: isString,
   password: isString,
   created: isOptionalDate,
   sessionKey: isOptionalString,
-});
+}, {} as any);
 
 
 /******************************************************************************
