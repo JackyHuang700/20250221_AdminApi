@@ -36,7 +36,10 @@
     "jsonwebtoken": "^9.0.2",
     "module-alias": "^2.2.3",
     "mongodb": "^6.13.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "tsconfig-paths": "^4.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
@@ -64,9 +67,6 @@
     "jiti": "^2.4.2",
     "nodemon": "^3.1.9",
     "supertest": "^7.0.0",
-    "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.7.3",
     "typescript-eslint": "^8.24.0"
   }
 }
